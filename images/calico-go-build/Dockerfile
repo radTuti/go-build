@@ -231,6 +231,8 @@ COPY --from=bpftool /bpftool /usr/bin
 
 # Copy semvalidator release tool.
 COPY bin/semvalidator-${TARGETARCH} /usr/local/bin/semvalidator
+# Copy docker-credential-calieph tool.
+COPY bin/docker-credential-calieph-${TARGETARCH} /usr/local/bin/docker-credential-calieph
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
